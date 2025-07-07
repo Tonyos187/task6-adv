@@ -1,0 +1,371 @@
+[{
+        "id": 1,
+        "title": "Understanding React Hooks",
+        "mainImage": "/assets/images/1.png",
+        "sections": [{
+                "image": "/assets/images/1.png",
+                "content": "This is section 1 of 'Understanding React Hooks', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/1.png",
+                "content": "This is section 2 of 'Understanding React Hooks', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "React",
+            "Frontend",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Mastering CSS Grid",
+        "mainImage": "/assets/images/2.png",
+        "sections": [{
+                "image": "/assets/images/2.png",
+                "content": "This is section 1 of 'Mastering CSS Grid', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/2.png",
+                "content": "This is section 2 of 'Mastering CSS Grid', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "CSS",
+            "Design",
+            "Frontend"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "JavaScript ES6 Features",
+        "mainImage": "/assets/images/3.png",
+        "sections": [{
+                "image": "/assets/images/3.png",
+                "content": "This is section 1 of 'JavaScript ES6 Features', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/3.png",
+                "content": "This is section 2 of 'JavaScript ES6 Features', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "JavaScript",
+            "ES6",
+            "Programming"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Responsive Design Principles",
+        "mainImage": "/assets/images/4.png",
+        "sections": [{
+                "image": "/assets/images/4.png",
+                "content": "This is section 1 of 'Responsive Design Principles', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/4.png",
+                "content": "This is section 2 of 'Responsive Design Principles', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Responsive",
+            "CSS",
+            "Design"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Building REST APIs with Node.js",
+        "mainImage": "/assets/images/5.png",
+        "sections": [{
+                "image": "/assets/images/5.png",
+                "content": "This is section 1 of 'Building REST APIs with Node.js', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/5.png",
+                "content": "This is section 2 of 'Building REST APIs with Node.js', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Node.js",
+            "Backend",
+            "API"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Introduction to TypeScript",
+        "mainImage": "/assets/images/6.png",
+        "sections": [{
+                "image": "/assets/images/6.png",
+                "content": "This is section 1 of 'Introduction to TypeScript', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/6.png",
+                "content": "This is section 2 of 'Introduction to TypeScript', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "TypeScript",
+            "Programming"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Tailwind CSS in Action",
+        "mainImage": "/assets/images/7.png",
+        "sections": [{
+                "image": "/assets/images/7.png",
+                "content": "This is section 1 of 'Tailwind CSS in Action', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/7.png",
+                "content": "This is section 2 of 'Tailwind CSS in Action', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Tailwind",
+            "CSS",
+            "Design"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "State Management with Redux",
+        "mainImage": "/assets/images/8.png",
+        "sections": [{
+                "image": "/assets/images/8.png",
+                "content": "This is section 1 of 'State Management with Redux', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/8.png",
+                "content": "This is section 2 of 'State Management with Redux', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Redux",
+            "State Management",
+            "React"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Optimizing Web Performance",
+        "mainImage": "/assets/images/9.png",
+        "sections": [{
+                "image": "/assets/images/9.png",
+                "content": "This is section 1 of 'Optimizing Web Performance', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/9.png",
+                "content": "This is section 2 of 'Optimizing Web Performance', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Performance",
+            "Frontend"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Accessibility in Web Design",
+        "mainImage": "/assets/images/10.png",
+        "sections": [{
+                "image": "/assets/images/10.png",
+                "content": "This is section 1 of 'Accessibility in Web Design', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/10.png",
+                "content": "This is section 2 of 'Accessibility in Web Design', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Accessibility",
+            "UX"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "React Router Deep Dive",
+        "mainImage": "/assets/images/11.png",
+        "sections": [{
+                "image": "/assets/images/11.png",
+                "content": "This is section 1 of 'React Router Deep Dive', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/11.png",
+                "content": "This is section 2 of 'React Router Deep Dive', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "React",
+            "Routing"
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Next.js for Beginners",
+        "mainImage": "/assets/images/12.png",
+        "sections": [{
+                "image": "/assets/images/12.png",
+                "content": "This is section 1 of 'Next.js for Beginners', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/12.png",
+                "content": "This is section 2 of 'Next.js for Beginners', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Next.js",
+            "React",
+            "Fullstack"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Working with MongoDB",
+        "mainImage": "/assets/images/13.png",
+        "sections": [{
+                "image": "/assets/images/13.png",
+                "content": "This is section 1 of 'Working with MongoDB', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/13.png",
+                "content": "This is section 2 of 'Working with MongoDB', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "MongoDB",
+            "Database"
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Authentication with JWT",
+        "mainImage": "/assets/images/14.png",
+        "sections": [{
+                "image": "/assets/images/14.png",
+                "content": "This is section 1 of 'Authentication with JWT', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/14.png",
+                "content": "This is section 2 of 'Authentication with JWT', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Auth",
+            "JWT",
+            "Security"
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Deploying with Netlify",
+        "mainImage": "/assets/images/15.png",
+        "sections": [{
+                "image": "/assets/images/15.png",
+                "content": "This is section 1 of 'Deploying with Netlify', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/15.png",
+                "content": "This is section 2 of 'Deploying with Netlify', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Deployment",
+            "Netlify"
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Unit Testing in JavaScript",
+        "mainImage": "/assets/images/16.png",
+        "sections": [{
+                "image": "/assets/images/16.png",
+                "content": "This is section 1 of 'Unit Testing in JavaScript', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/16.png",
+                "content": "This is section 2 of 'Unit Testing in JavaScript', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Testing",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": 17,
+        "title": "Styled Components Guide",
+        "mainImage": "/assets/images/17.png",
+        "sections": [{
+                "image": "/assets/images/17.png",
+                "content": "This is section 1 of 'Styled Components Guide', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/17.png",
+                "content": "This is section 2 of 'Styled Components Guide', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Styled Components",
+            "CSS-in-JS"
+        ]
+    },
+    {
+        "id": 18,
+        "title": "Building Forms in React",
+        "mainImage": "/assets/images/18.png",
+        "sections": [{
+                "image": "/assets/images/18.png",
+                "content": "This is section 1 of 'Building Forms in React', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/18.png",
+                "content": "This is section 2 of 'Building Forms in React', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Forms",
+            "React"
+        ]
+    },
+    {
+        "id": 19,
+        "title": "Git and GitHub Essentials",
+        "mainImage": "/assets/images/19.png",
+        "sections": [{
+                "image": "/assets/images/19.png",
+                "content": "This is section 1 of 'Git and GitHub Essentials', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/19.png",
+                "content": "This is section 2 of 'Git and GitHub Essentials', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Git",
+            "GitHub",
+            "Version Control"
+        ]
+    },
+    {
+        "id": 20,
+        "title": "Debugging JavaScript Efficiently",
+        "mainImage": "/assets/images/20.png",
+        "sections": [{
+                "image": "/assets/images/20.png",
+                "content": "This is section 1 of 'Debugging JavaScript Efficiently', providing key insights and explanations."
+            },
+            {
+                "image": "/assets/images/20.png",
+                "content": "This is section 2 of 'Debugging JavaScript Efficiently', diving deeper into the topic."
+            }
+        ],
+        "categories": [
+            "Debugging",
+            "JavaScript"
+        ]
+    }
+]

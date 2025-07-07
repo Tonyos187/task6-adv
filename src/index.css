@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+    /* Colors */
+    --color-bg: #FFFFFF;
+    --color-darkBg: #090D1F;
+    --color-mainText: #1A1A1A;
+    --color-secText: #667085;
+    --color-date: #6941C6;
+    /* Font sizes */
+    --text-h1: 48px;
+    --text-h2: 38px;
+    /* Border radius */
+    --radius-main: 20px;
+    /* Spacing */
+    --spacing-162: 8.4375%;
+    --spacing-112: 7.7777%;
+    --spacing-32: 32px;
+    --spacing-30: 30px;
+    --spacing-62: 62px;
+    --spacing-20: 20px;
+    /* Screens (optional you can still use default Tailwind responsive) */
+    --breakpoint-xs: 391px;
+    --breakpoint-md: 835px;
+    --breakpoint-lg: 1441px;
+}
+
+@layer base {
+    .dark {
+        --color-bg: #090D1F;
+        --color-mainText: #FFFFFF;
+        --color-secText: #C0C5D0;
+    }
+}
+
+@layer utilities {
+    .font-inter {
+        font-family: 'Inter', sans-serif;
+    }
+}
