@@ -20,9 +20,9 @@
     --spacing-62: 62px;
     --spacing-20: 20px;
     /* Screens (optional you can still use default Tailwind responsive) */
-    --breakpoint-xs: 391px;
-    --breakpoint-md: 835px;
-    --breakpoint-lg: 1441px;
+    --breakpoint-xs: 390px;
+    --breakpoint-md: 834px;
+    --breakpoint-lg: 1440px;
 }
 
 @layer base {

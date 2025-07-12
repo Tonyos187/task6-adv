@@ -1,11 +1,11 @@
+import LastThreePosts from "../components/LastThreeBlogs/LastThreeBlogs";
+import StoriesInterviews from "../components/StoriesInterviews/StoriesInterviews";
 
 const Newsletter: React.FC = () => {
   return (
     <>
-      <div style={{ padding: "2rem" }}>
-        <h2>Newsletter</h2>
-        <p>Subscribe to our newsletter to get the latest updates!</p>
-      </div>
+      <StoriesInterviews />
+      <LastThreePosts />
     </>
   );
 };

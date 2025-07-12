@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Blog from './pages/Blog';
 import BlogDetails from './components/BlogDetails/BlogDetails';
 import Newsletter from './pages/Newsletter';
+import Footer from './components/Footer/Footer';
 
 const routes = [
   { path: '/', element: <Blog /> },
@@ -20,6 +21,7 @@ function App() {
           <Route key={idx} path={route.path} element={route.element} />
         ))}
       </Routes>
+      <Footer />
     </Router>
   );
 }

@@ -10,7 +10,7 @@ const Navbar = () => {
     return savedTheme || "light";
   });
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -24,133 +24,186 @@ const Navbar = () => {
   }, [theme]);
 
   useEffect(() => {
-    setIsMenuOpen(false);
+    setMenuOpen(false);
   }, [location.pathname]);
 
   // Prevent body scroll when menu is open
   useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? "hidden" : "";
-  }, [isMenuOpen]);
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+  }, [menuOpen]);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
 
   return (
-    <>
-      <nav className="bg-bg dark:bg-bg fixed top-0 left-0 w-full z-50">
-        <div className="w-full flex flex-wrap items-center justify-between mx-auto p-20 md:px-112 md:py-30 lg:px-162">
-          <h1 className="font-semibold text-xl text-mainText dark:text-mainText">
-            Your Name
-          </h1>
+    <nav className="bg-bg fixed w-full top-0 lg:px-112 lg:py-30 md:py-5 md:px-8 p-5 left-0 z-50">
+      <div className="flex justify-between items-center">
+        <p className="text-xl font-bold text-mainText">Your Name</p>
+
+        <div className="md:hidden">
           <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-mainText rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-mainText dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-default"
-            aria-expanded={isMenuOpen}
-            onClick={() => setIsMenuOpen((prev) => !prev)}
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-mainText focus:outline-none"
           >
-            <span className="sr-only">Open main menu</span>
             <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6"
               fill="none"
-              viewBox="0 0 17 14"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
               <path
-                stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
           </button>
-          <div
-            className={`${
-              isMenuOpen ? "block" : "hidden"
-            } w-full md:block md:w-auto`}
-            id="navbar-default"
+        </div>
+
+        <div className="hidden md:flex md:items-center md:space-x-6 text-mainText text-lg">
+          <NavLink
+            to="/"
+            end
+            className={`hover:text-secText ${
+              location.pathname === "/"
+                ? "font-bold border-b-2 border-mainText"
+                : ""
+            }`}
           >
-            <ul className="text-xl font-normal flex flex-col items-center p-4 md:p-0 mt-4 rounded-lg bg-bg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-bg">
-              <li
+            Blog
+          </NavLink>
+          <a href="#" className="hover:text-secText">
+            Projects
+          </a>
+          <a href="#" className="hover:text-secText">
+            About
+          </a>
+          <NavLink
+            to="/newsletter"
+            className={`hover:text-secText ${
+              location.pathname === "/newsletter"
+                ? "font-bold border-b-2 border-mainText"
+                : ""
+            }`}
+          >
+            Newsletter
+          </NavLink>
+          <label className="relative inline-flex items-center cursor-pointer">
+            <input
+              type="checkbox"
+              value=""
+              className="sr-only peer"
+              onChange={toggleTheme}
+              checked={theme === "dark"}
+            />
+            <div className="group peer ring-0 bg-darkBg dark:bg-white rounded-full outline-none duration-300 after:duration-300 w-[96px] h-[40px] peer-checked:bg-white peer-checked:after:bg-darkBg peer-focus:outline-none after:rounded-full after:absolute after:bg-gray-50 after:outline-none after:h-[25px] after:w-[25px] after:top-[8px] after:right-[16px] after:flex after:justify-center after:items-center peer-checked:after:translate-x-[-40px] peer-hover:after:scale-95 flex justify-between items-center">
+              <img
+                src="/assets/icons/sun.png"
+                className="w-[21px] h-[21px] ml-[16px]"
+                alt=""
+              />
+              <img
+                src="/assets/icons/moon.png"
+                className="w-[21px] h-[21px] mr-[16px]"
+                alt=""
+              />
+            </div>
+          </label>
+        </div>
+      </div>
+
+      {menuOpen && (
+        <div className="fixed inset-0 bg-bg text-mainText flex flex-col justify-between items-center z-50">
+          <p className="pt-[20vh] text-center text-lg font-inter">Your Name</p>
+
+          <ul className="space-y-6 text-lg text-center">
+            <li>
+              <NavLink
+                onClick={() => setMenuOpen(false)}
+                to="/"
+                end
                 className={
                   location.pathname === "/"
-                    ? "font-bold text-mainText border-b-2 border-mainText rounded-0"
-                    : "text-mainText"
+                    ? "font-bold border-b-2 border-mainText"
+                    : ""
                 }
               >
-                <NavLink
-                  to="/"
-                  end
-                  className="block py-2 px-3 rounded-sm md:bg-transparent md:p-0 dark:text-mainText"
-                  aria-current="page"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Blog
-                </NavLink>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  About
-                </a>
-              </li>
-              <li
+                Blog
+              </NavLink>
+            </li>
+            <li>
+              <a href="#" onClick={() => setMenuOpen(false)}>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#" onClick={() => setMenuOpen(false)}>
+                About
+              </a>
+            </li>
+            <li>
+              <NavLink
+                onClick={() => setMenuOpen(false)}
+                to="/newsletter"
                 className={
                   location.pathname === "/newsletter"
-                    ? "font-bold text-mainText border-b-2 border-mainText rounded-0"
-                    : "text-mainText"
+                    ? "font-bold border-b-2 border-mainText"
+                    : ""
                 }
               >
-                <NavLink
-                  to="/newsletter"
-                  className="block py-2 px-3 rounded-sm md:bg-transparent md:p-0 dark:text-mainText"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Newsletter
-                </NavLink>
-              </li>
-              <li>
-                <label className="relative inline-flex items-center cursor-pointer">
-                  <input
-                    type="checkbox"
-                    value=""
-                    className="sr-only peer"
-                    onChange={toggleTheme}
-                    checked={theme === "dark"}
+                Newsletter
+              </NavLink>
+            </li>
+            <li>
+              <label className="relative inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  value=""
+                  className="sr-only peer"
+                  onChange={toggleTheme}
+                  checked={theme === "dark"}
+                />
+                <div className="group peer ring-0 bg-darkBg dark:bg-white rounded-full outline-none duration-300 after:duration-300 w-[96px] h-[40px] peer-checked:bg-white peer-checked:after:bg-darkBg peer-focus:outline-none after:rounded-full after:absolute after:bg-gray-50 after:outline-none after:h-[25px] after:w-[25px] after:top-[8px] after:right-[16px] after:flex after:justify-center after:items-center peer-checked:after:translate-x-[-40px] peer-hover:after:scale-95 flex justify-between items-center">
+                  <img
+                    src="/assets/icons/sun.png"
+                    className="w-[21px] h-[21px] ml-[16px]"
+                    alt=""
                   />
-                  <div className="group peer ring-0 bg-darkBg dark:bg-white rounded-full outline-none duration-300 after:duration-300 w-[96px] h-[40px] peer-checked:bg-white peer-checked:after:bg-darkBg peer-focus:outline-none after:rounded-full after:absolute after:bg-gray-50 after:outline-none after:h-[25px] after:w-[25px] after:top-[8px] after:right-[16px] after:flex after:justify-center after:items-center peer-checked:after:translate-x-[-40px] peer-hover:after:scale-95 flex justify-between items-center">
-                    <img
-                      src="/assets/icons/sun.png"
-                      className="w-[21px] h-[21px] ml-[16px]"
-                      alt=""
-                    />
-                    <img
-                      src="/assets/icons/moon.png"
-                      className="w-[21px] h-[21px] mr-[16px]"
-                      alt=""
-                    />
-                  </div>
-                </label>
-              </li>
-            </ul>
+                  <img
+                    src="/assets/icons/moon.png"
+                    className="w-[21px] h-[21px] mr-[16px]"
+                    alt=""
+                  />
+                </div>
+              </label>
+            </li>
+          </ul>
+
+          <div className="w-full py-20 flex flex-col items-center space-y-6">
+            <button
+              onClick={() => setMenuOpen(false)}
+              className="text-2xl text-mainText w-full h-full flex justify-center items-center"
+            >
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
           </div>
         </div>
-      </nav>
-    </>
+      )}
+    </nav>
   );
 };
 

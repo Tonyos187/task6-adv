@@ -375,12 +375,12 @@ const blogsData = [
           "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam possimus corrupti perspiciatis dolore expedita error debitis autem a obcaecati distinctio velit nostrum quasi amet alias tenetur, eius perferendis ab, impedit incidunt, voluptas aliquam ea beatae. Optio assumenda esse dolorum libero.",
       },
     ],
-    categories: ["Design", "Research", "Presentation"],
+    categories: ["Design", "Research"],
   },
   {
     id: 19,
     title: "UX review presentations",
-    mainImage: "/assets/images/19.png",
+    mainImage: "/assets/images/19 copy.png",
     date: "Sunday , 1 Jan 2023",
     mainDescription:
       "A comprehensive guide to understanding and using React Hooks in your projects.",
@@ -396,7 +396,7 @@ const blogsData = [
           "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam possimus corrupti perspiciatis dolore expedita error debitis autem a obcaecati distinctio velit nostrum quasi amet alias tenetur, eius perferendis ab, impedit incidunt, voluptas aliquam ea beatae. Optio assumenda esse dolorum libero.",
       },
     ],
-    categories: ["Design", "Research", "Presentation"],
+    categories: ["Design", "Research"],
   },
   {
     id: 20,
@@ -417,7 +417,7 @@ const blogsData = [
           "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam possimus corrupti perspiciatis dolore expedita error debitis autem a obcaecati distinctio velit nostrum quasi amet alias tenetur, eius perferendis ab, impedit incidunt, voluptas aliquam ea beatae. Optio assumenda esse dolorum libero.",
       },
     ],
-    categories: ["Design", "Research", "Presentation"],
+    categories: ["Design", "Research"],
   },
 ];
 

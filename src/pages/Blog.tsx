@@ -1,5 +1,5 @@
-import BlogList from "../components/BlogList/BlogList/BlogList";
-import RecentBlogsComponent from "../components/BlogList/RecentBlogsComponent/RecentBlogsComponent";
+import BlogList from "../components/BlogList/BlogList";
+import RecentBlogsComponent from "../components/RecentBlogsComponent/RecentBlogsComponent";
 import Hero from "../components/Hero/Hero";
 
 const Blog: React.FC = () => {
